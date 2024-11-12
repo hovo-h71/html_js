@@ -1,0 +1,19 @@
+.parent {
+    display: flex;
+}
+
+.karzina {
+    padding-left: 1120px;
+}
+
+h1 {
+    padding-left: 30px;
+    color: red;
+    font-size: 30px;
+}
+
+.nkarner {
+    width: 300px;
+    height: 200px;
+}
+

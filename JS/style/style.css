@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent_div1> div {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.div_border {
+    border: none;
+}
+
+.img_carousel{
+    height: 550px !important;
+    width: 100%;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+main {
+    margin-top: 100px;
+}

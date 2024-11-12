@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.div_1 {
+    width: 600px;
+    height: 600px;
+    border-style: ridge;
+    border-color: red;
+    border-width: 8px;
+}
+
+.div_2 {
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+    animation-name: div_animate;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-direction: reverse;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-timing-function: cubic-bezier(0,677,0.06);
+    top: 0;
+    left: 0;
+}
+
+
+
+
+
+
+
+/* @keyframes div_animate {
+    from {
+        top: 0;
+        left: 0;
+    }
+    to {
+        left: 400px;
+    }
+} */
+
+@keyframes div_animate {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    25% {
+        top: 400px;
+        left: 0;
+    }
+    50% {
+        top: 400px;
+        left: 400px;
+    }
+    75% {
+        top: 0;
+        left: 400px;
+    }
+    100% {
+        top:0;
+        left: 0;
+    }
+}
+
+
+
+.ball {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(red, blue ,green);
+    border-radius: 50%;
+    animation-name: ball;
+    animation-duration: 4s;
+    position: relative;
+    top: 125px;
+    left: 0;
+    animation-fill-mode: forwards;
+}
+
+.ball:hover {
+    animation-play-state: paused;
+}
+
+@keyframes ball {
+    from {
+        top: 125px;
+        left: 0;
+        transform: rotate(174deg);
+    }
+    to {
+        top: 347px;
+        left: 87%;
+    }
+}
